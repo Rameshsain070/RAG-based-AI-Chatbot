@@ -24,18 +24,18 @@ If you want to look at the code and run it on your own machine, here is the simp
 git clone [https://github.com/Rameshsain070/RAG-based-AI-Chatbot.git](https://github.com/Rameshsain070/RAG-based-AI-Chatbot.git)
 cd RAG-based-AI-Chatbot
 
-**2 Install the requirements
+**2. Install the requirements**
 pip install -r requirements.txt
 
-**3. Add your API keys
+**3. Add your API keys**
 Create a file named .env in the main folder and paste your free API keys inside:
-PINECONE_API_KEY="your-pinecone-key"
-GROQ_API_KEY="your-groq-key"
+PINECONE_API_KEY="your-pinecone-key".
+GROQ_API_KEY="your-groq-key".
 
-**4. Start the Chatbot
+**4. Start the Chatbot**
 To launch the chat interface, simply run:
 python ingest.py
 uvicorn app:app --reload
 
-**5 streamlit run ui.py
+**5 streamlit run ui.py**
 (Note: If you want to test the raw backend API instead, you can run uvicorn app:app --reload and go to http://localhost:8000/docs).
